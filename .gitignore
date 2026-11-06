@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.env
+rapi_callsigns.csv
+rapi_tested.txt
+rapi_api_cache.json

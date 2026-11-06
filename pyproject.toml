@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rapi-callsign"
+version = "0.1.0"
+description = "Client and bulk scraper for RAPI NUSANTARA / official IAR-IKRAP callsign search data"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+  {name = "RAPI callsign tools"}
+]
+keywords = ["rapi", "callsign", "ikrap", "iar", "scraper"]
+dependencies = [
+  "requests>=2.28.0",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/example/rapi-callsign"
+
+[project.scripts]
+rapi-callsign = "rapi_callsign.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rapi_callsign*"]
